@@ -2,9 +2,9 @@ import os
 import json
 
 class Json(object):
-    def __init__(self,dir):
+    def __init__(self,json_dir = 'json/param.json'):
         self.dic = {}
-        self.dir = dir
+        self.dir = json_dir
         if os.path.exists(self.dir):
             with open(self.dir,'r') as load_f:
                 self.dic = json.load(load_f) #dump
@@ -18,6 +18,7 @@ class Json(object):
             
     def show(self):
         print(self.dic)
+    
     
         
         
