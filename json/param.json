@@ -1,0 +1,21 @@
+{
+ "model": {
+	"output_size": 256,
+ 	"input_size": 256, 
+	"name": "FCN",
+	"mod":"train"
+	}, 
+ "train": {
+	"epoch": 1000,
+	"batch_size": 20, 
+	"dataset_name": "mpii", 
+	"lr": 0.0002, "beta1": 0.5,
+	"save_epoch_fre":50
+	},
+ "dir":{
+	"checkpoint_dir":"./checkpoint",
+	"log_dir":"./log",
+	"sample_dir":"./sample",
+	"test_dir":"./test"
+	}
+}
