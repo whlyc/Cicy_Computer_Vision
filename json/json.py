@@ -9,7 +9,7 @@ class Json(object):
             with open(self.dir,'r') as load_f:
                 self.dic = json.load(load_f) #dump
         else:
-            print('no argments!')
+            print('no argments')
             
     def update(self,scope,name,content):
         self.dic[scope][name] = content
